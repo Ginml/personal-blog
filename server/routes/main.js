@@ -45,7 +45,7 @@ router.get('/about', (req, res) => {
 
 
 
-/*
+//add comment from here to down there (check message down) this is to make sure posting and dating functionality works //
 function insertPostData () {
     Post.insertMany([
         {
@@ -90,6 +90,8 @@ function insertPostData () {
      },
    ])
  }
-   */
+
+ // here ! //
+   
 
 module.exports = router;
