@@ -39,6 +39,70 @@ router.get('', async (req, res) => {
     
     });
 
+
+/**
+ * get
+ * post:id
+ */
+
+router.get('/post/:id', async (req, res) => {
+try{
+
+let slug = req.params.id;
+
+
+
+
+const data = await post.findById({_id:slug});
+
+const locals = {
+  title: data.title,
+  description:"Simple Blog created with NodeJs, Express & MongoDb "
+}
+
+res.render('post', {locals, data});
+}
+catch(error){
+  console.log(error);
+}
+});
+
+
+
+/**
+ * post
+ * post - sarchTerm
+ */
+
+router.post('/search', async (req, res) => {
+  try{
+    const locals = {
+      title: "search",
+      description: "Simple Blog created with Node]s, Express & MongoDb."
+    }
+    let sarchTerm = req.body.sarchTerm;
+    const searchNospecialChar = sarchTerm.replace(/[^a - zA - Z0 - 9]/g, "")
+
+    const data = await Post.find({
+   $or: [
+    {title: {$regex: new RegExp(searchNospecialChar, 'i')}},
+    {body: {$regex: new RegExp(searchNospecialChar, 'i')}}
+   ]
+    });
+
+    res.render("search", {
+    data,
+    locals
+    });
+
+
+  } catch(error) {
+    console.log(error);
+  }
+});
+
+
+
 router.get('/about', (req, res) => {
     res.render('about');
 });
