@@ -38,8 +38,11 @@ const adminLayout = '../views/layouts/admin';
        
 
    const {username, password} = req.body;
-   console.log(req.body);
 
+
+
+
+   
 res.redirect('/admin');
        
     }catch (error) {
