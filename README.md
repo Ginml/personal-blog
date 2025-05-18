@@ -15,6 +15,7 @@ A consumer will be able to view those blogs without the ability to alter them.
 <hr>
 To setup this project locally, follow these steps:
 <br/>
+
 1. Install NodeJS
 2. setup a MongoDB cluster
 3. Install required packages:
