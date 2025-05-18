@@ -1,20 +1,20 @@
 # A Personl Blog with Unique UI!
 <hr>
-<img src="/img/showcase/example1.png" alt="Personal blog hompage">
+<img src="public/img/showcase/example1.png" alt="Personal blog hompage">
 
 ## System Overview
 <hr>
 This project pleases both creators and consumers, it allows a creator to log in through the /admin page and post, edit, delete blogs through a REST API that saves everything using MongoDB.
 A consumer will be able to view those blogs without the ability to alter them.
 
-### Flowchart
+### Website Flowchart
 <hr>
-<img src="/img/showcase/personal_blog_flowchart.png" alt="Flowchart of personal blog website">
+<img src="public/img/showcase/personal_blog_flowchart.png" alt="Flowchart of personal blog website">
 
 ### Installation
 <hr>
 To setup this project locally, follow these steps:
-
+<br/>
 1. Install NodeJS
 2. setup a MongoDB cluster
 3. Install required packages:
@@ -34,28 +34,28 @@ npm run dev
 
 ### Technologies
 <hr>
-<img src="/img/showcase/technologies/frontend_logo.png" alt="Frontend logos">
-<img src="/img/showcase/technologies/nodejs_logo.png" alt="NodeJS logo">
-<img src="/img/showcase/technologies/express_logo.png" alt="Express logo">
-<img src="/img/showcase/technologies/ejs_logo.png" alt="EJS logo">
-<img src="/img/showcase/technologies/mongodb_logo.png" alt="MongoDB logo">
+<img src="public/img/showcase/technologies/frontend_logo.png" alt="Frontend logos">
+<img src="public/img/showcase/technologies/nodejs_logo.png" alt="NodeJS logo">
+<img src="public/img/showcase/technologies/express_logo.png" alt="Express logo">
+<img src="public/img/showcase/technologies/ejs_logo.png" alt="EJS logo">
+<img src="public/img/showcase/technologies/mongodb_logo.png" alt="MongoDB logo">
 
 
 ### Showcase
 <hr>
 
 #### Homepage:
-<img src="/img/showcase/example1.png" alt="Personal blog hompage">
+<img src="public/img/showcase/example1.png" alt="Personal blog hompage">
 
 #### Admin Login Page:
-<img src="/img/showcase/example2.png" alt="Personal blog admin login page">
+<img src="public/img/showcase/example2.png" alt="Personal blog admin login page">
 
 
 #### Admin Dashboard Page:
-<img src="/img/showcase/example3.png" alt="Personal blog admin dashboard page">
+<img src="public/img/showcase/example3.png" alt="Personal blog admin dashboard page">
 
 #### View/Edit Post Page:
-<img src="/img/showcase/example4.png" alt="Personal blog View/Edit Post Page">
+<img src="public/img/showcase/example4.png" alt="Personal blog View/Edit Post Page">
 
 
 
@@ -67,9 +67,9 @@ npm run dev
 
 ## Contributors
 <hr>
-Mohammed
-Hisham
-Badr
+Mohammed<br/>
+Hisham<br/>
+Badr<br/>
 Omar
 
 
