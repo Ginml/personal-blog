@@ -1,6 +1,6 @@
 /* MAY CHANGE */
 :root {
-    --black: #1c1c1c;
+    --white: #FAF5EE;
     --gray: #7e7e7e;
     --gray-light: #e4e4e4;
     --red: #b30000;
@@ -14,14 +14,13 @@
 body {
     font-family: "Roboto Slab", serif, "Josefin Sans", sans-serif;
     margin: 0;
-    color: var(--black);
+    color: var(--white);
     font-size: var(--font-size-base);
-    background-color: #FAF5EE;
-    background-image: url(/img/img-noise-361x370.png);
+    background-image: url(/img/black_background_noise.jpg);
 }
 
 a {
-    color: var(--black);
+    color: var(--white);
 }
 
 h1 {
@@ -51,16 +50,18 @@ textarea {
     width: 100%;
     padding: 0.7rem 0.75rem;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .btn {
-    background-color: var(--black);
     border: none;
-    color: white;
+    color: #1c1c1c;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;   
 }
 
 .btn-delete {
@@ -114,6 +115,7 @@ img {
     grid-area: logo;
     max-width: 150px;
     overflow: hidden;
+    margin-left: 20px;
 }
 
 .header-nav {
@@ -145,11 +147,11 @@ img {
     border: 2px solid transparent;
     font-size: var(--font-size-base);
     font-weight: 600;
-    color: var(--black);
+    color: var(--white);
 }
 
 .header-button button:hover {
-    border: 2px solid var(--black);
+    border: 2px solid var(--white);
 }
 
 /* NAVIGATION */
@@ -262,7 +264,7 @@ img {
 }
   
 .pagination:hover {
-    color: var(--black);
+    color: var(--white);
 }
 
 .article {
@@ -278,7 +280,7 @@ img {
 .searchBar {
     visibility: hidden;
     transform: translateY(-100px);
-    background-color: var(--black);
+    background-color: var(--white);
     padding: 4px 0;
     position: absolute;
     left: 0;
@@ -322,8 +324,8 @@ img {
   
   .admin-post-controls .btn  {
     display: inline-block;
-    background-color: var(--black);
-    color: var(--gray-light);
+    background-color: var(--white);
+    color: #1c1c1c;
     border: 0;
     text-decoration: none;
     font-size: .8rem;
