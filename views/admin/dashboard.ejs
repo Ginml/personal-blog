@@ -1,30 +1,26 @@
 <div class="admin-title">
-<h2>Posts</h2>
-<a herf="/add-post" class="button">+ Add New</a>
+  <h2>Posts</h2>
+  <a href="/add-post" class="button">+ Add New</a>
 </div>
 
 <ul class="admin-posts">
 
-    <% data.forEach(post => %>
-
+  <% data.forEach(post => { %>
+   
     <li>
-        <a herf="/post/<%= post._id %>">
+      <a href="/post/<%= post._id %>">
         <%= post.title %> &nearr;
-        </a>
-<div class="admin-post-controls">
-    <a herf="/edit-post/<%= post._id %>" class="btn">Edit</a>
+      </a>
+      <div class="admin-post-controls">
+        <a href="/edit-post/<%= post._id %>" class="btn">Edit</a>
 
-    <form action="/delete-post/<%= post._id %>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete" class="btn">
-    </form>
-</div>
+        <form action="/delete-post/<%= post._id %>?_method=DELETE" method="POST">
+          <input type="submit" value="Delete" class="btn-delete btn">
+        </form>
 
+      </div>
 
     </li>
 
-
-
-    <%})%>
-
-
+  <% }) %>
 </ul>
